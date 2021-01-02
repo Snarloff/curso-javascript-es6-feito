@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Trabalhando com a DOM</title>
+</head>
+<body>
+	<div id="app">
+		<!-- id="nome" class="nome" -->
+		<input type="text" name="nome" />
+		<button class="butao">Adicionar</button>
+	</div>
+
+	<script>
+		// getElementById
+		// getElementByTagName
+		// getElementsByClassName
+		// querySelectorAll
+		// body div#app input
+		var inputElement = document.querySelector("input[name=nome]");
+
+		var btnElement = document.querySelector("button.butao")
+
+		btnElement.onclick = function(){
+			var text = inputElement.value;
+			alert(text);
+		}
+
+		console.log(inputElement);
+	</script>
+</body>
+</html>
